@@ -92,8 +92,8 @@ The test suite uses `node:test` and a static smoke check that validates scripts,
 
 ## Documentation
 
-- Roadmap: `docs/proposta-roadmap.md`
-- Evolution roadmap: `docs/evolution-roadmap.md`
+- Roadmap: `docs/roadmap.md`
+- Evolution roadmap: `docs/roadmap-evolution.md`
 - Adaptation plan: `docs/adaptation-plan.md`
 - Scoring rules: `docs/scoring-rules.md`
 - Internal glossary: `docs/internal-glossary.md`
