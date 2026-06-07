@@ -1,0 +1,17 @@
+{
+  "name": "emoji-decoder",
+  "version": "0.1.0",
+  "description": "Decode emoji clues and compete with friends.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs && bash scripts/check-static.sh",
+    "start": "npx serve src",
+    "dev": "npx serve src --listen 3000"
+  },
+  "keywords": ["game", "party-game", "emoji", "decoder", "family"],
+  "author": "Insight X Lab Game Studios",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

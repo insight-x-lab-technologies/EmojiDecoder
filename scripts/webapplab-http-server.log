@@ -1,0 +1,35 @@
+
+[2026-06-05 19:09:24] Iniciando EmojiDecoder na porta 8080
+Diretório servido: /mnt/userdata/Projetos/Pessoal/EmojiDecoder/src
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET / HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET /themes.css HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET /manifest.webmanifest HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET /style.css HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET /jokes-config.js HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET /translations.js HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET /script.js HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:41] "GET /assets/background/cosmic_mobile_bg_home.png HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:42] "GET /assets/songs/cosmic_gameroom.mp3 HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:45] "GET /assets/background/cosmic_desktop_bg_app.png HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:45] "GET /assets/icons/icon-192.png HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:09:45] "GET /favicon.ico HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:10:05] "GET /assets/songs/cosmic_gameplay.mp3 HTTP/1.1" 200 -
+100.76.11.120 - - [05/Jun/2026 19:11:13] "GET /assets/songs/cosmic_gameroom.mp3 HTTP/1.1" 200 -
+
+[2026-06-06 10:47:41] Iniciando EmojiDecoder na porta 8080
+Diretório servido: /mnt/userdata/Projetos/Pessoal/EmojiDecoder/src
+100.68.120.124 - - [06/Jun/2026 10:47:54] "GET / HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:54] "GET /themes.css HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:54] "GET /style.css HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:54] "GET /jokes-config.js HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:54] "GET /translations.js HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:54] "GET /script.js HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:54] "GET /assets/background/cosmic_desktop_bg_home.png HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:55] "GET /assets/songs/cosmic_gameroom.mp3 HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:56] "GET /favicon.ico HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:47:56] "GET /assets/icons/icon-192.png HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:48:10] "GET /assets/background/cosmic_desktop_bg_app.png HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:49:00] "GET /assets/songs/cosmic_gameplay.mp3 HTTP/1.1" 200 -
+100.68.120.124 - - [06/Jun/2026 10:50:44] "GET / HTTP/1.1" 304 -
+100.68.120.124 - - [06/Jun/2026 10:50:44] "GET /style.css HTTP/1.1" 304 -
+100.68.120.124 - - [06/Jun/2026 10:50:44] "GET /script.js HTTP/1.1" 304 -
