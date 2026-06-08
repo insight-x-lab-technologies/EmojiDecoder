@@ -33,3 +33,53 @@ Diretório servido: /mnt/userdata/Projetos/Pessoal/EmojiDecoder/src
 100.68.120.124 - - [06/Jun/2026 10:50:44] "GET / HTTP/1.1" 304 -
 100.68.120.124 - - [06/Jun/2026 10:50:44] "GET /style.css HTTP/1.1" 304 -
 100.68.120.124 - - [06/Jun/2026 10:50:44] "GET /script.js HTTP/1.1" 304 -
+
+[2026-06-07 22:51:34] Iniciando EmojiDecoder na porta 8080
+Diretório servido: /home/codexbot/Projetos/Pessoal/AppProjects/EmojiDecoder/src
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.10/http/server.py", line 1307, in <module>
+    test(
+  File "/usr/lib/python3.10/http/server.py", line 1258, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/usr/lib/python3.10/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.10/http/server.py", line 1301, in server_bind
+    return super().server_bind()
+  File "/usr/lib/python3.10/http/server.py", line 137, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.10/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+
+[2026-06-07 22:52:57] Iniciando EmojiDecoder na porta 8080
+Diretório servido: /home/codexbot/Projetos/Pessoal/AppProjects/EmojiDecoder/src
+192.168.68.110 - - [07/Jun/2026 22:52:57] code 404, message File not found
+192.168.68.110 - - [07/Jun/2026 22:52:57] "GET /2GenArcade/ HTTP/1.1" 404 -
+192.168.68.110 - - [07/Jun/2026 22:52:58] code 404, message File not found
+192.168.68.110 - - [07/Jun/2026 22:52:58] "GET /2GenArcade/ HTTP/1.1" 404 -
+192.168.68.110 - - [07/Jun/2026 22:52:59] code 404, message File not found
+192.168.68.110 - - [07/Jun/2026 22:52:59] "GET /2GenArcade/ HTTP/1.1" 404 -
+192.168.68.110 - - [07/Jun/2026 22:53:00] code 404, message File not found
+192.168.68.110 - - [07/Jun/2026 22:53:00] "GET /2GenArcade/ HTTP/1.1" 404 -
+192.168.68.110 - - [07/Jun/2026 22:53:00] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:01] code 404, message File not found
+192.168.68.110 - - [07/Jun/2026 22:53:01] "GET /2GenArcade/ HTTP/1.1" 404 -
+192.168.68.110 - - [07/Jun/2026 22:53:01] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:03] "GET / HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:03] "GET /jokes-config.js HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:03] "GET /translations.js HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET / HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /script.js HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /translations.js HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /manifest.webmanifest HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /style.css HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /jokes-config.js HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /themes.css HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /assets/background/cosmic_desktop_bg_home.png HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:09] "GET /assets/songs/cosmic_gameroom.mp3 HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:53:10] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.68.110 - - [07/Jun/2026 22:54:01] "GET /assets/songs/cosmic_gameplay.mp3 HTTP/1.1" 200 -

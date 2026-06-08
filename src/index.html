@@ -338,30 +338,6 @@
             </div>
           </div>
 
-          <div class="card mb hidden setup-block-assignment" id="companion-assignment-card">
-            <h2 class="card-title" data-i18n="multiDevice.assignmentTitle">Tela auxiliar</h2>
-            <div class="toggle-label" data-i18n="multiDevice.assignmentLabel">Quem usa a tela auxiliar</div>
-            <div class="toggle-sub mt-xs" data-i18n="multiDevice.assignmentSub">Escolha o time ou jogador que vai ler usando o dispositivo conectado.</div>
-            <select class="inp mt" id="companion-assignment-select"></select>
-          </div>
-
-          <!-- STEP 4: ROUNDS -->
-          <div class="card mb setup-block-rounds">
-            <h2 class="card-title" data-i18n="setup.matchTitle">4️⃣ Configurar Partida</h2>
-            <div class="toggle-wrap toggle-wrap-last">
-              <div>
-                <div class="toggle-label" data-i18n="setup.roundsLabel">Número de Rodadas</div>
-                <div class="toggle-sub" data-i18n="setup.roundsSub">Quantas rodadas por jogador</div>
-              </div>
-              <div class="range-wrap range-wrap-fixed">
-                <input type="range" class="range-inp" id="rounds-slider" min="1" max="5" value="3">
-                <div class="range-val" id="rounds-val">3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="setup-column setup-column-right">
           <!-- STEP 2: PLAYERS TEAMS -->
           <div class="card mb setup-block-players" id="step-teams">
             <h2 class="card-title" data-i18n="setup.teamPlayersTitle">2️⃣ Jogadores por Time</h2>
@@ -405,6 +381,30 @@
             </div>
           </div>
 
+          <div class="card mb hidden setup-block-assignment" id="companion-assignment-card">
+            <h2 class="card-title" data-i18n="multiDevice.assignmentTitle">Tela auxiliar</h2>
+            <div class="toggle-label" data-i18n="multiDevice.assignmentLabel">Quem usa a tela auxiliar</div>
+            <div class="toggle-sub mt-xs" data-i18n="multiDevice.assignmentSub">Escolha o time ou jogador que vai ler usando o dispositivo conectado.</div>
+            <select class="inp mt" id="companion-assignment-select"></select>
+          </div>
+
+          <!-- STEP 4: ROUNDS -->
+          <div class="card mb setup-block-rounds">
+            <h2 class="card-title" data-i18n="setup.matchTitle">4️⃣ Configurar Partida</h2>
+            <div class="toggle-wrap toggle-wrap-last">
+              <div>
+                <div class="toggle-label" data-i18n="setup.roundsLabel">Número de Rodadas</div>
+                <div class="toggle-sub" data-i18n="setup.roundsSub">Quantas rodadas por jogador</div>
+              </div>
+              <div class="range-wrap range-wrap-fixed">
+                <input type="range" class="range-inp" id="rounds-slider" min="1" max="5" value="3">
+                <div class="range-val" id="rounds-val">3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-column setup-column-right">
           <!-- STEP 3: CHALLENGE & CATEGORIES -->
           <div class="card mb setup-block-options">
             <h2 class="card-title" data-i18n="setup.optionsTitle">3️⃣ Opções de Jogo</h2>
@@ -470,10 +470,33 @@
             </div>
             <div class="toggle-wrap" id="difficulty-filter-wrap">
               <div>
-                <label class="toggle-label" for="difficulty-select" data-i18n="setup.difficultyTitle">Dificuldade</label>
+                <div class="toggle-label" data-i18n="setup.difficultyTitle">Dificuldade</div>
                 <div class="toggle-sub" data-i18n="setup.difficultySub">Filtra desafios e ajusta bônus de pontuação.</div>
               </div>
-              <select class="inp" id="difficulty-select">
+              <div class="difficulty-segmented" role="group" aria-label="Difficulty">
+                <button class="difficulty-chip selected" id="difficulty-easy" type="button" data-difficulty="easy">
+                  <span class="difficulty-chip-icon" aria-hidden="true">🌱</span>
+                  <span class="difficulty-chip-copy">
+                    <span class="difficulty-chip-name" data-i18n="difficulty.easy">Fácil</span>
+                    <span class="difficulty-chip-desc" data-i18n="setup.difficultyEasyDesc">Ótimo para crianças e iniciantes</span>
+                  </span>
+                </button>
+                <button class="difficulty-chip" id="difficulty-normal" type="button" data-difficulty="normal">
+                  <span class="difficulty-chip-icon" aria-hidden="true">⚡</span>
+                  <span class="difficulty-chip-copy">
+                    <span class="difficulty-chip-name" data-i18n="difficulty.normal">Normal</span>
+                    <span class="difficulty-chip-desc" data-i18n="setup.difficultyNormalDesc">Desafio equilibrado para a família</span>
+                  </span>
+                </button>
+                <button class="difficulty-chip" id="difficulty-hard" type="button" data-difficulty="hard">
+                  <span class="difficulty-chip-icon" aria-hidden="true">🔥</span>
+                  <span class="difficulty-chip-copy">
+                    <span class="difficulty-chip-name" data-i18n="difficulty.hard">Difícil</span>
+                    <span class="difficulty-chip-desc" data-i18n="setup.difficultyHardDesc">Palavras complexas, para os corajosos!</span>
+                  </span>
+                </button>
+              </div>
+              <select class="inp hidden" id="difficulty-select" aria-hidden="true" tabindex="-1">
                 <option value="easy" data-i18n="difficulty.easy">Fácil</option>
                 <option value="normal" data-i18n="difficulty.normal">Normal</option>
                 <option value="hard" data-i18n="difficulty.hard">Difícil</option>

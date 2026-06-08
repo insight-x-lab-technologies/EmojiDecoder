@@ -3870,6 +3870,18 @@ const READING_CHALLENGES_IT = [
       });
     }
 
+    function selectDifficulty(diff) {
+      const normalized = DIFFICULTY_KEYS.includes(diff) ? diff : 'easy';
+      const select = document.getElementById('difficulty-select');
+      if (select) select.value = normalized;
+      gameState.difficulty = normalized;
+      document.querySelectorAll('.difficulty-chip[data-difficulty]').forEach(button => {
+        button.classList.toggle('selected', button.dataset.difficulty === normalized);
+        button.setAttribute('aria-pressed', button.dataset.difficulty === normalized ? 'true' : 'false');
+      });
+      updateDiffWordCount();
+    }
+
     function toggleRandomChallenge(enabled) {
       gameState.randomChallenge = Boolean(enabled);
     }
@@ -4119,6 +4131,7 @@ const READING_CHALLENGES_IT = [
     function buildQuickGameConfig() {
       return normalizeQuickGameConfig({
         mode: gameState.mode,
+        difficulty: gameState.difficulty,
         rounds: parseInt(document.getElementById('rounds-slider').value, 10) || gameState.totalRounds || 3,
         randomChallenge: gameState.randomChallenge,
         selectedCategories: [...gameState.selectedCategories],
@@ -4165,11 +4178,10 @@ const READING_CHALLENGES_IT = [
       gameState.randomChallenge = normalized.randomChallenge;
       gameState.selectedCategories = [...normalized.selectedCategories];
       document.getElementById('random-challenge-toggle').checked = normalized.randomChallenge;
-      document.getElementById('difficulty-select').value = normalized.difficulty;
       document.getElementById('rounds-slider').value = String(normalized.rounds);
       document.getElementById('rounds-val').textContent = String(normalized.rounds);
       gameState.gameType = 'mime';
-      gameState.difficulty = normalized.difficulty;
+      selectDifficulty(normalized.difficulty);
       updateTeamLabels();
       renderSetupPlayers();
       renderCategorySelection();
@@ -6137,6 +6149,7 @@ const READING_CHALLENGES_IT = [
           selectedCategories: getDefaultSelectedCategories()
         };
         selectMode('teams');
+        selectDifficulty('easy');
         goTo('setup');
         renderSetupPlayers();
       }
@@ -6330,6 +6343,12 @@ const READING_CHALLENGES_IT = [
           return;
         }
 
+        const difficultyChip = event.target.closest('.difficulty-chip[data-difficulty]');
+        if (difficultyChip) {
+          selectDifficulty(difficultyChip.dataset.difficulty);
+          return;
+        }
+
         const categoryCard = event.target.closest('.category-card[data-category]');
         if (categoryCard) {
           toggleCategory(categoryCard.dataset.category);
@@ -6418,8 +6437,7 @@ const READING_CHALLENGES_IT = [
       });
 
       document.getElementById('difficulty-select')?.addEventListener('change', event => {
-        gameState.difficulty = DIFFICULTY_KEYS.includes(event.target.value) ? event.target.value : 'easy';
-        updateDiffWordCount();
+        selectDifficulty(event.target.value);
       });
 
       document.getElementById('joke-curation-filter')?.addEventListener('change', renderJokeRanking);
@@ -6497,5 +6515,6 @@ const READING_CHALLENGES_IT = [
     checkAndUnlockAchievements({ notify: false });
     registerEventListeners();
     selectMode('teams');
+    selectDifficulty(gameState.difficulty);
     initializeMultiDeviceJoinFromUrl();
     installSharedPackFromUrl();

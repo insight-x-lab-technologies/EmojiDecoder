@@ -367,6 +367,97 @@
       margin: 0;
     }
 
+    .difficulty-segmented {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      width: 100%;
+    }
+
+    #difficulty-filter-wrap {
+      display: grid;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .difficulty-chip {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      min-width: 0;
+      padding: 14px 12px;
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      background: var(--surface-bg);
+      color: var(--text);
+      text-align: left;
+      cursor: pointer;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .difficulty-chip:hover {
+      transform: translateY(-1px);
+      background: var(--surface-bg-hover);
+      border-color: color-mix(in srgb, var(--accent2) 36%, var(--surface-border));
+    }
+
+    .difficulty-chip.selected {
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent2) 28%, transparent);
+    }
+
+    .difficulty-chip[data-difficulty="easy"].selected {
+      border-color: var(--diff-easy);
+      background: var(--diff-easy-bg);
+    }
+
+    .difficulty-chip[data-difficulty="normal"].selected {
+      border-color: var(--diff-normal);
+      background: var(--diff-normal-bg);
+    }
+
+    .difficulty-chip[data-difficulty="hard"].selected {
+      border-color: var(--diff-hard);
+      background: var(--diff-hard-bg);
+    }
+
+    .difficulty-chip-icon {
+      flex: 0 0 auto;
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .difficulty-chip-copy {
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .difficulty-chip-name {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      line-height: 1.1;
+    }
+
+    .difficulty-chip-desc {
+      font-size: 0.72rem;
+      line-height: 1.25;
+      color: var(--text3);
+      font-weight: 700;
+    }
+
+    .difficulty-chip[data-difficulty="easy"] .difficulty-chip-name {
+      color: var(--diff-easy);
+    }
+
+    .difficulty-chip[data-difficulty="normal"] .difficulty-chip-name {
+      color: var(--diff-normal);
+    }
+
+    .difficulty-chip[data-difficulty="hard"] .difficulty-chip-name {
+      color: var(--diff-hard);
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -2149,6 +2240,10 @@
       .setup-block-mode .mode-grid {
         grid-template-columns: 1fr;
         gap: 8px;
+      }
+
+      .difficulty-segmented {
+        grid-template-columns: 1fr;
       }
 
       .setup-block-players .flex-row,
