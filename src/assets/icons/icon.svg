@@ -2,27 +2,30 @@
   <title id="title">EmojiDecoder</title>
   <desc id="desc">Ícone do app EmojiDecoder</desc>
   <defs>
-    <linearGradient id="bg" x1="80" y1="64" x2="432" y2="448" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ffcf5a"/>
-      <stop offset="0.42" stop-color="#ec4899"/>
-      <stop offset="1" stop-color="#6d28d9"/>
+    <linearGradient id="bg" x1="72" y1="58" x2="442" y2="454" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe066"/>
+      <stop offset="0.4" stop-color="#f43f8f"/>
+      <stop offset="1" stop-color="#5b21b6"/>
     </linearGradient>
-    <linearGradient id="face" x1="152" y1="130" x2="360" y2="382" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff7d6"/>
+    <linearGradient id="tile" x1="126" y1="104" x2="386" y2="398" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff8dc"/>
       <stop offset="1" stop-color="#ffd166"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <circle cx="134" cy="126" r="18" fill="#ffffff" opacity="0.78"/>
-  <circle cx="392" cy="154" r="12" fill="#ffffff" opacity="0.7"/>
-  <circle cx="402" cy="380" r="20" fill="#ffffff" opacity="0.22"/>
-  <path d="M152 196c0-48 39-87 87-87h34c48 0 87 39 87 87v88c0 58-47 105-105 105s-103-47-103-105v-88z" fill="url(#face)" stroke="#1f123d" stroke-width="18"/>
-  <path d="M169 215c28-47 66-66 114-56 34 7 59 29 73 64v-36c0-50-42-90-94-90h-14c-52 0-94 40-94 90v31c5 1 10 0 15-3z" fill="#1f123d"/>
-  <circle cx="215" cy="255" r="15" fill="#1f123d"/>
-  <circle cx="299" cy="255" r="15" fill="#1f123d"/>
-  <path d="M209 314c28 27 68 27 96 0" fill="none" stroke="#1f123d" stroke-width="18" stroke-linecap="round"/>
-  <path d="M119 313c-26 14-42 35-47 63" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round"/>
-  <path d="M393 313c26 14 42 35 47 63" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round"/>
-  <path d="M150 418h212" stroke="#ffffff" stroke-width="30" stroke-linecap="round" opacity="0.95"/>
-  <path d="M198 421h116" stroke="#1f123d" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="118" cy="118" r="18" fill="#ffffff" opacity="0.82"/>
+  <circle cx="396" cy="138" r="13" fill="#ffffff" opacity="0.68"/>
+  <circle cx="410" cy="378" r="22" fill="#ffffff" opacity="0.24"/>
+  <path d="M124 207c0-55 45-100 100-100h64c55 0 100 45 100 100v64c0 73-59 132-132 132s-132-59-132-132v-64z" fill="url(#tile)" stroke="#20113f" stroke-width="18"/>
+  <path d="M157 228c36-49 80-67 133-53 34 9 61 31 80 66v-39c0-52-43-94-96-94h-36c-53 0-96 42-96 94v38c5-2 10-6 15-12z" fill="#20113f"/>
+  <circle cx="209" cy="259" r="16" fill="#20113f"/>
+  <path d="M290 260c22-19 47-19 69 0" fill="none" stroke="#20113f" stroke-width="16" stroke-linecap="round"/>
+  <path d="M207 322c28 24 70 24 98 0" fill="none" stroke="#20113f" stroke-width="18" stroke-linecap="round"/>
+  <path d="M122 309l-50 50" stroke="#ffffff" stroke-width="28" stroke-linecap="round"/>
+  <path d="M390 309l50 50" stroke="#ffffff" stroke-width="28" stroke-linecap="round"/>
+  <path d="M147 424h218" stroke="#ffffff" stroke-width="31" stroke-linecap="round" opacity="0.95"/>
+  <path d="M194 425h124" stroke="#20113f" stroke-width="14" stroke-linecap="round" opacity="0.86"/>
+  <path d="M354 342l42 42" stroke="#20113f" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="334" cy="322" r="42" fill="none" stroke="#ffffff" stroke-width="24"/>
+  <circle cx="334" cy="322" r="27" fill="none" stroke="#20113f" stroke-width="12" opacity="0.9"/>
 </svg>

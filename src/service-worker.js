@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'emojidecoder-pwa-v1';
+const CACHE_VERSION = 'emojidecoder-pwa-v2';
 const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -12,8 +12,10 @@ const APP_SHELL = [
   './manifest.webmanifest',
   './favicon.ico',
   './assets/icons/icon.svg',
+  './assets/icons/apple-touch-icon.png',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
+  './assets/icons/maskable-192.png',
   './assets/icons/maskable-512.png',
   './assets/player-default.svg',
   './assets/background/cosmic_desktop_bg_home.png',
